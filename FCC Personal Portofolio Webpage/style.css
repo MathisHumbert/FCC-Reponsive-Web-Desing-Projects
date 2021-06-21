@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+  width: 100%;
+  top: 0;
+  background: brown;
+  position: fixed;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  list-style-type: none;
+}
+nav a {
+  display: block;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+nav a:hover {
+  background: #222;
+}
+
+/* about page */
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h1 {
+  font-size: 3.5rem;
+  color: #f7f7f7;
+  text-transform: capitalize;
+}
+.about h2 {
+  font-size: 2rem;
+  font-style: italic;
+  color: brown;
+}
+
+/* projects */
+.work {
+  background: #45567d;
+  padding-bottom: 5rem;
+}
+.title {
+  color: #f7f7f7;
+  font-size: 3rem;
+  padding-top: 5rem;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 0.5rem;
+  margin-bottom: 3rem;
+}
+.center {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+.project-tile {
+  display: block;
+  border: 3px solid #222;
+  border-radius: 10px;
+  text-decoration: none;
+  max-width: 520px;
+}
+.project-tile img {
+  width: 100%;
+
+  display: block;
+}
+.project-tile h1 {
+  text-align: center;
+  color: #f7f7f7;
+  background: rgb(69, 80, 125);
+  padding: 0.5rem;
+  transition: all 0.3s linear;
+}
+.project-tile h1:hover {
+  color: #222;
+  font-size: 2rem;
+}
+@media screen and (min-width: 720px) {
+  .center {
+    grid-template-columns: 1fr 1fr;
+  }
+  nav a {
+    padding: 1rem 1.25rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav a {
+    padding: 1rem 1.5rem;
+    font-size: 1.75rem;
+  }
+}
+/* footer */
+footer {
+  padding-top: 5rem;
+  background: #222;
+}
+footer h1 {
+  font-size: 2rem;
+  color: #f7f7f7;
+  width: 80%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+footer a {
+  color: brown;
+}

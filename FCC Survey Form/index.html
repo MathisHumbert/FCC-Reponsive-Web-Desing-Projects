@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- title -->
+    <h1 id="title">FCC Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time and effort to help us improve the platform
+    </p>
+    <!-- form -->
+    <form id="survey-form">
+      <!-- name -->
+      <div class="form-group premier">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Enter your name"
+          class="form-control"
+        />
+      </div>
+      <!-- email -->
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+          class="form-control"
+        />
+      </div>
+      <!-- number -->
+      <div class="form-group">
+        <label for="number" id="number-label">Age:</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="18"
+          max="30"
+          placeholder="Enter your age"
+          class="form-control"
+          required
+        />
+      </div>
+      <!-- dropdown -->
+      <div class="form-group">
+        <label for="dropdown">What is your favorite sport ?</label>
+        <select name="sport" id="dropdown" class="form-control">
+          <option value="">--Please choose an option--</option>
+          <option value="football">Football</option>
+          <option value="tennis">Tennis</option>
+          <option value="mma">MMA</option>
+          <option value="rugby">Rugby</option>
+          <option value="basketball">Basketball</option>
+          <option value="other">-Another Sport-</option>
+        </select>
+      </div>
+      <!-- radio buttons -->
+      <div class="form-group">
+        <p class="p-label">How many times a week do you exercise ?</p>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="one" />
+          One
+        </label>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="two" />
+          Two
+        </label>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="three" />
+          Three
+        </label>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="four" />
+          Four
+        </label>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="five" />
+          Five
+        </label>
+        <label for="number-radio" class="btn">
+          <input type="radio" name="time" id="number-radio" value="more" />
+          More than five
+        </label>
+      </div>
+      <!-- checkboxes -->
+      <div class="form-group">
+        <div>
+          <p class="p-label">What is your favortie sports to watch?</p>
+          <input
+            type="checkbox"
+            name="watch-sport"
+            id="favorite-sport"
+            value="football"
+          />
+          <label for="favorite-sport" class="style-box">Football</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="watch-sport"
+            id="favorite-sport"
+            value="tennis"
+          />
+          <label for="favorite-sport" class="style-box">Tennis</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="watch-sport"
+            id="favorite-sport"
+            value="mma"
+          />
+          <label for="favorite-sport" class="style-box">MMA</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="watch-sport"
+            id="favorite-sport"
+            value="rugby"
+          />
+          <label for="favorite-sport" class="style-box">Rugby</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="watch-sport"
+            id="favorite-sport"
+            value="basketball"
+          />
+          <label for="favorite-sport" class="style-box">Basketball</label>
+        </div>
+      </div>
+
+      <!-- comment -->
+      <div class="form-group">
+        <label for="suggestions" class="comment-label"
+          >Any comments or suggestions?</label
+        >
+        <textarea
+          name="comment"
+          id="suggestions"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <!-- submit -->
+      <div class="form-group">
+        <input type="submit" value="Submit" id="submit-btn" />
+      </div>
+    </form>
+    <!-- end of form -->
+  </body>
+</html>

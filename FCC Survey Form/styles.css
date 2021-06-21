@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: rgb(173, 186, 230);
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+  color: white;
+}
+
+form {
+  background: rgb(18, 18, 63);
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+#description {
+  font-style: italic;
+}
+
+.form-group {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.premier {
+  margin-top: 0;
+}
+
+.form-control {
+  display: block;
+  margin: 5px 0px;
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.p-label {
+  margin-bottom: 5px;
+}
+
+.style-box {
+  font-size: 1.2rem;
+}
+
+#suggestions {
+  margin: 5px 0px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgb(73, 236, 73);
+  cursor: pointer;
+  transition: 1s linear;
+  color: white;
+}
+
+#submit-btn:hover {
+  background-color: green;
+}
